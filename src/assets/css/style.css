@@ -1,31 +1,112 @@
 /*======== GOOGLE FONTS ========*/
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Space+Grotesk:wght@400;500;700&display=swap');
 
 /*======== VARIABLES ========*/
 :root {
+    --header-height: 3rem;
 
     /*======== COLORS ========*/
+    --first-color: 	hsl(355, 71%, 50%);
+    --first-color-alt: 	hsl(354, 71%, 45%);
+    --first-color-send: hsl(355, 71%, 55%);
+    --title-color: hsl(0, 10%, 8%);
+    --text-color: hsl(0, 2%, 35%);
+    --text-color-light: hsl(0, 2%, 55%);
+    --body-color: hsl(0, 60%, 99%);
+    --container-color: 	hsl(0, 0%, 100%);
 
     /*======== font && typo ========*/
     /* .5rem = 8px, 1rem = 16px ... */
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
 
     /*======== font weight ========*/
+    --font-semi-bold: 600;
+    --font-bold: 700;
 
     /*======== margenes ========*/
-
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
     /*======== z-index ========*/
-
+    --z-tooltip: 10;
+    --z-fixed: 100;
 }
 
-/* responsive typo */
+@media screen and (min-width: 968px) {
+    :root {
+    --biggest-font-size: 3rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    }
+}
 
 /*======== BASE ========*/
+*,::before,::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 /*======== variables dark theme ========*/
 
 /*======== button dark/light ========*/
 
+body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1,h2,h3,ul,p {
+    margin: 0;
+}
+
+h1,h2,h3 {
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /*======== REUSABLE CLASSES ========*/
+.section {
+    padding: 4rem 0 2rem;
+}
+
+.section-title, .section-title-center {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: var(--mb-3);
+}
+
 
 /*======== LAYOUT ========*/
 
