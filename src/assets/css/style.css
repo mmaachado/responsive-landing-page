@@ -276,6 +276,17 @@ img {
     background-color: var(--first-color-alt);
 }
 
+.button-link {
+    background: none;
+    padding: 0;
+    color: var(--first-color);
+}
+
+.button-link:hover {
+    background-color: transparent;
+    color: var(--first-color-alt);
+}
+
 /*======== SHARE ========*/
 .share__data {
     text-align: center;
@@ -291,6 +302,30 @@ img {
 }
 
 /*======== DECORATION ========*/
+.decoration__container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.decoration__data {
+    text-align: center;
+    padding: 1rem 1rem 2rem;
+    background-color: var(--container-color);
+    box-shadow: 0 2px 6px rgba(65, 11, 16, .15);
+    border-radius: 1rem;
+}
+
+.decoration__data:hover {
+    box-shadow: 0 3px 12px rgba(65, 11, 16, .15);
+}
+
+.decoration__img {
+    width: 180px;
+}
+
+.decoration__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+}
 
 /*======== ACCESSORIES ========*/
 
