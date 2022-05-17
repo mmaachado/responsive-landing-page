@@ -277,6 +277,18 @@ img {
 }
 
 /*======== SHARE ========*/
+.share__data {
+    text-align: center;
+}
+
+.share__description {
+    margin-bottom: var(--mb-2);
+}
+
+.share__img {
+    width: 280px;
+    justify-self: center;
+}
 
 /*======== DECORATION ========*/
 
