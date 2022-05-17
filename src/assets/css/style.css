@@ -215,7 +215,7 @@ img {
 .scrolltop {
     position: fixed;
     right: 1rem;
-    bottom: 1.5rem;
+    bottom: -20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,16 +224,57 @@ img {
     border-radius: .4rem;
     z-index: var(--z-tooltip);
     transition: .4s;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 .scrolltop:hover {
     background-color: var(--first-color);
 }
 
+.scrolltop__icon {
+    font-size: 1.5rem;
+    color: var(--body-color);
+}
+
+.show-scroll {
+    visibility: visible;
+    bottom: 1.5rem;
+}
+
 /*======== HOME ========*/
+.home__container {
+    row-gap: .5rem;
+}
+
+.home__img {
+    width: 280px;
+    justify-self: center;
+}
+
+.home__title {
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: var(--mb-2);
+}
+
+.home__description {
+    margin-bottom: var(--mb-3);
+}
 
 /*======== BUTTONS ========*/
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    font-weight: var(--font-semi-bold);
+    transition: .3s;
+}
+
+.button:hover {
+    background-color: var(--first-color-alt);
+}
 
 /*======== SHARE ========*/
 
