@@ -383,6 +383,43 @@ img {
 }
 
 /*======== SEND GIFT ========*/
+.send {
+    background-color: var(--first-color-send);
+}
+
+.send__title,
+.send__description {
+    color: #fff;
+}
+
+.send__description {
+    text-align: center;
+    margin-bottom: var(--mb-4);
+}
+
+.send__direction {
+    display: flex;
+    background-color: #fff;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.send__input {
+    width: 90%;
+    outline: none;
+    border: none;
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+}
+
+.send__input::placeholder {
+    font-family: var(--body-font);
+}
+
+.send__img {
+    width: 280px;
+    justify-self: center;
+}
 
 /*======== FOOTER ========*/
 
