@@ -328,6 +328,59 @@ img {
 }
 
 /*======== ACCESSORIES ========*/
+.accessory__container {
+    grid-template-columns: repeat(2,1fr);
+    padding-bottom: 2rem;
+}
+
+.accessory__content {
+    position: relative;
+    display: grid;
+    padding: .25rem .75rem .75rem;
+    background-color: var(--container-color);
+    box-shadow: 0 2px 6px rgba(65, 11, 16, .15);
+    border-radius: 1rem;
+}
+
+.accessory__content:hover {
+    box-shadow: 0 3px 12px rgba(65, 11, 16, .15);
+}
+
+.accessory__img {
+    width: 110px;
+    justify-self: center;
+    margin-bottom: .25rem;
+}
+
+.accessory__title,
+.accessory__category {
+    text-align: center;
+}
+
+.accessory__title {
+    font-size: var(--normal-font-size);
+}
+
+.accessory__category {
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+    color: var(--text-color-light);
+}
+
+.accessory__price {
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.accessory__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    font-size: 1.25rem;
+    padding: .5rem .625rem;
+    border-radius: 1rem 0 1rem 0;
+}
 
 /*======== SEND GIFT ========*/
 
