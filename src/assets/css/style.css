@@ -60,8 +60,23 @@ html {
 }
 
 /*======== variables dark theme ========*/
+body.dark-theme {
+    --first-color-send: hsl(0, 10%, 8%);
+    --title-color: hsl(0, 8%, 95%);
+    --text-color: hsl(354, 10%, 80%);
+    --body-color: hsl(353, 12%, 13%);
+    --container-color: 	hsl(353, 10%, 17%);
+}
 
 /*======== button dark/light ========*/
+.change-theme {
+    position: absolute;
+    right: 1.5rem;
+    top: 2.2rem;
+    display: flex;
+    font-size: 2rem;
+    cursor: pointer;
+}
 
 body {
     margin: var(--header-height) 0 0 0;
@@ -524,6 +539,10 @@ img {
     }
     .nav__toggle {
         display: none;
+    }
+    .change-theme {
+        position: initial;
+        margin-left: var(--mb-4);
     }
     .home__container {
         padding: 7rem 2rem 0;
